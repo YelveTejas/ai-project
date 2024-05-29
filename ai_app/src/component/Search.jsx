@@ -23,15 +23,15 @@ const Search = () => {
       });
   };
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-slate-900 min-h-screen w-screen">
       <div className="w-full max-w-4xl m-auto">
         <div className="flex justify-center ">
-          <h1 className="pt-12 text-[24px] md:text-5xl font-bold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">
+          <h1 className="pt-12 text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">
             SASTA CHAT GPT
           </h1>
         </div>
 
-        <div className="w-full flex justify-center items-center m-auto gap-5 mt-5 rounded-lg ">
+        <div className="w-full mt-5 flex justify-center items-center gap-2 p-2 md:gap-5 rounded-lg">
           <input
             type="text"
             placeholder="Enter your prompt"
@@ -51,12 +51,18 @@ const Search = () => {
           {loading ? (
             <Loader />
           ) : result ? (
-            <div className="rounded-lg p-4 ">
+            <div className="rounded-lg p-4">
               <p className="text-center text-lg from-neutral-300 text-white justify-center">
                 {result}
               </p>
             </div>
-          ) : null}
+          ) : (
+            <div className="flex  justify-center items-center w-full  mt-12">
+              <p className="text-center text-[25px] md:text-[42px] text-gray-600 font-bold  justify-center">
+                How can I help you today?
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -64,4 +70,3 @@ const Search = () => {
 };
 
 export default Search;
-

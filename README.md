@@ -1,3 +1,4 @@
++![Screenshot (103)](https://github.com/YelveTejas/ai-project/assets/103955930/b9f55176-aba0-4479-af6f-aa55011cdd79)
 # Basic gpt like application
 
 
@@ -75,4 +76,5 @@ Create a .env file and add the following environment variables:
     `` 
       npm start
    ``
+<img src=https://github.com/YelveTejas/ai-project/assets/103955930/b9f55176-aba0-4479-af6f-aa55011cdd79/>
 
